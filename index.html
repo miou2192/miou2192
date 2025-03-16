@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~miou2192</title>
+<style>
+body {
+  font-family: arial;
+  background-color: #878787;
+}
+a {
+  color: black;
+}
+.dropbtn {
+  background-color: #878787;
+  color: black;
+  padding: 0px;
+  line-height: 0px;
+  font-family: times;
+  font-size: 70px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 60px;
+  z-index: 1;
+  font-family: arial;
+  font-size: 12px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 2px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: #3e8e41;}
+
+.hide {
+  display: none;
+}
+
+area target {
+  background-color: red;
+}
+
+</style>
+  </head>
+  <body>
+   <script type="text/javascript">
+        document.write("GOOD LUCK, YOU");
+        document.write("<br/>");
+        document.write("I  LOVE, YOU");
+        document.write("<br/>");
+        let myDate = new Date();
+        let myDay = myDate.getDay();
+
+        // Array of days. 
+        let weekday = ['Sunday', 'Monday', 'Tuesday',
+            'Wednesday', 'Thursday', 'Friday', 'Saturday'
+        ];
+        document.write("Today is " + weekday[myDay]);
+        document.write("<br/>");
+
+        // get hour value. 
+        let hours = myDate.getHours();
+        let ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        let minutes = myDate.getMinutes();
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        let myTime = hours + ":" + minutes + " " + ampm;
+        document.write("\tThe time is " + myTime); 
+        
+    </script>
+    <div class="countup" id="countup1">
+  It has been
+  <span class="timeel years">00</span>
+  <span class="timeel timeRefYears">years,</span>
+  <span class="timeel days">00</span>
+  <span class="timeel timeRefDays">days,</span>
+  <span class="timeel hours">00</span>
+  <span class="timeel timeRefHours">hours,</span>
+  <span class="timeel minutes">00</span>
+  <span class="timeel timeRefMinutes">minutes,</span>
+  and
+  <span class="timeel seconds">00</span>
+  <span class="timeel timeRefSeconds">seconds</span>
+</div>
+    <p style="font-size:120px; font-family:times; padding-top:5px; padding-bottom:5px; margin:0px; line-height:0px;">~</p>
+<br>
+<br>
+<br>
+    IMAGE MAP (CLICK A CONSOLE) ↓
+    <br>
+<img src="Image/myconsoles.png" usemap="#image-map">
+<map name="image-map">
+    <area target="" alt="list" title="list" href="/list" coords="155,329,151,321,170,201,191,201,193,208,194,215,197,222,202,226,206,223,203,215,203,206,203,199,211,199,211,204,211,212,210,219,211,225,214,229,219,227,224,224,227,217,230,209,232,201,237,200,236,205,234,212,240,212,244,206,247,210,237,320,232,327,223,331" shape="poly">
+    <area target="" alt="think" title="think" href="/think" coords="250,208,249,252,247,263,241,304,246,310,368,295,369,287,363,239,359,210,340,196" shape="poly">
+    <area target="" alt="outgoing" title="outgoing" href="/outgoing" coords="394,188,423,183,427,189,437,243,450,310,446,315,381,328,374,322,368,260,370,253,365,248,360,210,363,204,374,210,380,213,385,207,397,208,402,212,407,210,407,203,412,199,406,194,398,190" shape="poly">
+</map>
+<br>
+<b><a href="https://www.whysf.xyz/">&lt;</a> <a href="https://geekring.net/">Geekring</a> <a href="https://wiljam144.github.io/axolum/">&gt;</a></b>
+<div class="clear" style="padding-bottom:9px;"></div>
+    <div style="height: 30px; width: 87px; font-size: 12px; line-height: 9px; padding: 0px; border: 1px solid black; float: left;"> <a href="https://miou2192.com/">This is my button, I am Miou2192</a> </div> <img src="affection.gif" style="height: 31px; width: 88px; padding:0px;">
+    <div class="clear"></div>
+<p style="font-size:12px; padding-top:0px; line-height:0px;">Let's pretend to have <a href="/talk">a conversation.</a></p>
+
+<br>
+
+<script>
+window.onload = function() {
+  // Month Day, Year Hour:Minute:Second, id-of-element-container
+  countUpFromTime("Sep 16, 2008 12:00:00", 'countup1'); // ****** Change this line!
+};
+function countUpFromTime(countFrom, id) {
+  countFrom = new Date(countFrom).getTime();
+  var now = new Date(),
+      countFrom = new Date(countFrom),
+      timeDifference = (now - countFrom);
+    
+  var secondsInADay = 60 * 60 * 1000 * 24,
+      secondsInAHour = 60 * 60 * 1000;
+    
+  days = Math.floor(timeDifference / (secondsInADay) * 1);
+  years = Math.floor(days / 365);
+  if (years > 1){ days = days - (years * 365) }
+  hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+  mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+  secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+  var idEl = document.getElementById(id);
+  idEl.getElementsByClassName('years')[0].innerHTML = years;
+  idEl.getElementsByClassName('days')[0].innerHTML = days;
+  idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+  idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+  idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+
+  clearTimeout(countUpFromTime.interval);
+  countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
+}
+</script>
+
+  </body>
+</html>
